@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo7</title>
+	
+	<script type="text/javascript" src="https://facebook.github.io/react/js/jsfiddle-integration.js"></script>
+</head>
+<body>
+<div id="container"></div>
+<script type="text/javascript">
+	var Hello = React.createClass({
+		render: function(){
+			var styleObj = {
+				color:'red'
+			};
+			return <div>Hello {this.props.title} {this.props.name}</div>;
+		}
+	});
+	React.render(<Hello name="World" title="Mr"/>,
+		document.getElementById('container')
+	);
+</script>
+	
+</body>
+</html>
